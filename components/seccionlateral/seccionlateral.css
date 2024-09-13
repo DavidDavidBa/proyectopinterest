@@ -1,0 +1,35 @@
+.seccionlateral {
+  width: 50%;
+  background-color: black;
+  height: 400px;
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  right: -100%;
+  margin-top: 80px;
+  padding: var(--rtc-padding-l);
+  border-radius: var(--rtc-border-radius-s);
+  transition: right 1.3s ease;
+}
+
+.seccionlateral.active {
+  right: 0;
+}
+
+.seccionlateral > ul {
+  display: flex;
+  flex-direction: column;
+  gap: var(--rtc-gap-l);
+  justify-content: center;
+  align-items: center;
+  margin-top: var(--rtc-margin-l);
+}
+
+.seccionlateral > ul > li {
+  color: white;
+}
+
+.seccionlateral > ul > li:hover {
+  cursor: pointer;
+  font-size: large;
+}
